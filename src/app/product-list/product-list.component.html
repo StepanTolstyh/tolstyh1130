@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Название</th>
+            <th scope="col">Категория</th>
+            <th scope="col">Вес</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Количество</th>
+            <th scope="col">
+              <button class="btn btn-warning" (click)="onAddProduct()">Добавить</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.weidth}}</td>
+            <td>{{product.price | currency: "RUB":"symbol-narrow"}}</td>
+            <td>{{product.amount}}</td>
+            <td><button class="btn btn-info" (click)="OnLinkProfile(product.id)">Редактировать</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

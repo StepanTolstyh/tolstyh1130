@@ -1,0 +1,12 @@
+{
+  "mproducts": [
+    {
+      "name": "Диван",
+      "price": "5001",
+      "weidth": "79",
+      "category": "Мебель",
+      "amount": "2",
+      "id": 1
+    }
+  ]
+}
